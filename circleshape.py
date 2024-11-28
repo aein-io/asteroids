@@ -27,6 +27,6 @@ class CircleShape(pygame.sprite.Sprite):
         distance = pygame.math.Vector2.distance_to(
             self.position, other_circle.position)
 
-        if distance < (self.radius + other_circle.radius):
+        if distance <= (self.radius + other_circle.radius):
             return True
         return False
